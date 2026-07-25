@@ -16,7 +16,8 @@ import {
   Linkedin,
   Video,
   Globe,
-  MessageCircle
+  MessageCircle,
+  FileText
 } from 'lucide-react';
 import {
   Chart as ChartJS,
@@ -382,7 +383,7 @@ export const MetaAdsPage: React.FC<MetaAdsPageProps> = ({ onNavigate }) => {
               <span className="text-xs font-bold uppercase tracking-wider text-[#F5A623] mb-2 block">Creative Funnel</span>
               <h2 className="text-2xl lg:text-3xl font-extrabold text-[#214634] leading-tight mb-4">Alur Aset: Kawat Spiral</h2>
               <p className="text-base text-slate-600 leading-relaxed">
-                Journey lengkap audiens: <strong className="text-[#214634]">Landing Page → Shortform Content → WhatsApp Closing</strong>
+                Journey lengkap audiens: <strong className="text-[#214634]">Landing Page → Short Form Pendaftaran → WhatsApp Closing</strong>
               </p>
             </div>
 
@@ -393,13 +394,13 @@ export const MetaAdsPage: React.FC<MetaAdsPageProps> = ({ onNavigate }) => {
                 <p className="text-xs text-slate-600">Halaman konversi dengan CTA kuat</p>
               </div>
               <div className="bg-[#F8FAFC] rounded-2xl border border-slate-200 p-5 text-center">
-                <Video className="w-8 h-8 text-purple-600 mx-auto mb-2" />
-                <h4 className="font-bold text-[#214634] text-sm mb-1">Shortform Video</h4>
-                <p className="text-xs text-slate-600">Konten hook & demo produk</p>
+                <FileText className="w-8 h-8 text-purple-600 mx-auto mb-2" />
+                <h4 className="font-bold text-[#214634] text-sm mb-1">Short Form Pendaftaran</h4>
+                <p className="text-xs text-slate-600">Formulir singkat: Nama, No. WA & Alamat</p>
               </div>
               <div className="bg-[#F8FAFC] rounded-2xl border border-slate-200 p-5 text-center">
                 <MessageCircle className="w-8 h-8 text-green-600 mx-auto mb-2" />
-                <h4 className="font-bold text-[#214634] text-sm mb-1">WhatsApp</h4>
+                <h4 className="font-bold text-[#214634] text-sm mb-1">WhatsApp Closing</h4>
                 <p className="text-xs text-slate-600">Closing & validasi order</p>
               </div>
             </div>
@@ -474,6 +475,27 @@ export const MetaAdsPage: React.FC<MetaAdsPageProps> = ({ onNavigate }) => {
             <div className="max-w-3xl mb-8">
               <span className="text-xs font-bold uppercase tracking-wider text-yellow-800 mb-2 block">Creative Funnel</span>
               <h2 className="text-2xl lg:text-3xl font-extrabold text-[#214634] leading-tight mb-4">Alur Aset: Kantong Buah</h2>
+              <p className="text-base text-slate-600 leading-relaxed">
+                Journey lengkap audiens: <strong className="text-[#214634]">Landing Page → Short Form Pendaftaran → WhatsApp Closing</strong>
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+              <div className="bg-white/80 rounded-2xl border border-[#FEF3C7] p-5 text-center">
+                <Globe className="w-8 h-8 text-blue-600 mx-auto mb-2" />
+                <h4 className="font-bold text-[#214634] text-sm mb-1">Landing Page</h4>
+                <p className="text-xs text-slate-600">Halaman konversi dengan CTA kuat</p>
+              </div>
+              <div className="bg-white/80 rounded-2xl border border-[#FEF3C7] p-5 text-center">
+                <FileText className="w-8 h-8 text-purple-600 mx-auto mb-2" />
+                <h4 className="font-bold text-[#214634] text-sm mb-1">Short Form Pendaftaran</h4>
+                <p className="text-xs text-slate-600">Formulir singkat: Nama, No. WA & Alamat</p>
+              </div>
+              <div className="bg-white/80 rounded-2xl border border-[#FEF3C7] p-5 text-center">
+                <MessageCircle className="w-8 h-8 text-green-600 mx-auto mb-2" />
+                <h4 className="font-bold text-[#214634] text-sm mb-1">WhatsApp Closing</h4>
+                <p className="text-xs text-slate-600">Closing & validasi order</p>
+              </div>
             </div>
 
             <div className="relative group">

@@ -37,7 +37,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
         <nav className="bg-[#2A4D3E] text-white rounded-full px-8 py-4 flex flex-col md:flex-row justify-between items-center gap-4 shadow-lg">
           <div 
             onClick={() => onNavigate('home')} 
-            className="font-bold text-xl flex items-center gap-2 cursor-pointer">
+            className="font-bold text-xl flex items-center gap-2 cursor-pointer"
+          >
           </div>
           <div className="hidden md:flex gap-8 text-sm font-medium">
             <a href="#tentang" className="hover:text-[#FFB800] transition">Tentang</a>
@@ -98,7 +99,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
         </div>
         
         <div className="relative h-[500px] flex justify-center items-center">
-          <div className="absolute w-[380px] h-[380px] bg-[#FFB800] rounded-[43%_57%_70%_30%_/_30%_30%_70%_70%] -z-10"></div>
+          <div className="absolute w-[380px] h-[380px] bg-[#FFB800] rounded-[43%_57%_70%_30%_/_30%_30%_70%_70%] -z-10 animate-blob"></div>
           
           <div className="w-[320px] h-[420px] bg-slate-200 rounded-[100px] overflow-hidden border-8 border-white shadow-xl relative flex items-center justify-center">
             <img 
@@ -111,33 +112,37 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             />
           </div>
 
-          <div className="absolute top-20 right-10 bg-[#FFB800] text-slate-900 font-bold px-4 py-2 rounded-full shadow-lg transform rotate-6 text-sm">
+          <div className="absolute top-20 right-10 bg-[#FFB800] text-slate-900 font-bold px-4 py-2 rounded-full shadow-lg transform rotate-6 text-sm animate-float">
             SEO Specialist
           </div>
-          <div className="absolute bottom-20 left-10 bg-[#2A4D3E] text-white font-bold px-4 py-2 rounded-full shadow-lg transform -rotate-3 flex items-center gap-2 text-sm">
-            <span className="w-2 h-2 bg-[#FFB800] rounded-full"></span>
+          <div className="absolute bottom-20 left-10 bg-[#2A4D3E] text-white font-bold px-4 py-2 rounded-full shadow-lg transform -rotate-3 flex items-center gap-2 text-sm animate-float-reverse">
+            <span className="w-2 h-2 bg-[#FFB800] rounded-full animate-pulse"></span>
             Content Strategist
           </div>
         </div>
       </header>
 
       {/* Marquee Ticker */}
-      <div className="bg-[#FFB800] py-4 overflow-hidden transform -rotate-1 relative z-20 w-[105%] -ml-4 border-y-4 border-[#2A4D3E]">
-        <div className="animate-scroll flex items-center gap-10 text-[#2A4D3E] font-bold text-xl uppercase tracking-wider whitespace-nowrap">
-          <span>SEO Strategy</span> <span className="text-2xl">•</span>
-          <span>Content Writing</span> <span className="text-2xl">•</span>
-          <span>Local SEO</span> <span className="text-2xl">•</span>
-          <span>WordPress</span> <span className="text-2xl">•</span>
-          <span>Keyword Research</span> <span className="text-2xl">•</span>
-          <span>Google Bisnisku</span> <span className="text-2xl">•</span>
-          <span>Landing Page</span> <span className="text-2xl">•</span>
-          <span>SEO Strategy</span> <span className="text-2xl">•</span>
-          <span>Content Writing</span> <span className="text-2xl">•</span>
-          <span>Local SEO</span> <span className="text-2xl">•</span>
-          <span>WordPress</span> <span className="text-2xl">•</span>
-          <span>Keyword Research</span> <span className="text-2xl">•</span>
-          <span>Google Bisnisku</span> <span className="text-2xl">•</span>
-          <span>Landing Page</span>
+      <div className="bg-[#FFB800] py-4 overflow-hidden transform -rotate-1 relative z-20 w-[105%] -ml-4 border-y-4 border-[#2A4D3E] shadow-md">
+        <div className="animate-scroll text-[#2A4D3E] font-bold text-xl uppercase tracking-wider whitespace-nowrap">
+          <div className="flex items-center gap-10 pr-10">
+            <span>SEO Strategy</span> <span className="text-2xl">•</span>
+            <span>Content Writing</span> <span className="text-2xl">•</span>
+            <span>Local SEO</span> <span className="text-2xl">•</span>
+            <span>WordPress</span> <span className="text-2xl">•</span>
+            <span>Keyword Research</span> <span className="text-2xl">•</span>
+            <span>Google Bisnisku</span> <span className="text-2xl">•</span>
+            <span>Landing Page</span> <span className="text-2xl">•</span>
+          </div>
+          <div className="flex items-center gap-10 pr-10">
+            <span>SEO Strategy</span> <span className="text-2xl">•</span>
+            <span>Content Writing</span> <span className="text-2xl">•</span>
+            <span>Local SEO</span> <span className="text-2xl">•</span>
+            <span>WordPress</span> <span className="text-2xl">•</span>
+            <span>Keyword Research</span> <span className="text-2xl">•</span>
+            <span>Google Bisnisku</span> <span className="text-2xl">•</span>
+            <span>Landing Page</span> <span className="text-2xl">•</span>
+          </div>
         </div>
       </div>
 

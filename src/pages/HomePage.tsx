@@ -37,10 +37,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
         <nav className="bg-[#2A4D3E] text-white rounded-full px-8 py-4 flex flex-col md:flex-row justify-between items-center gap-4 shadow-lg">
           <div 
             onClick={() => onNavigate('home')} 
-            className="font-bold text-xl flex items-center gap-2 cursor-pointer"
-          >
-            <span className="bg-[#FFB800] text-[#2A4D3E] w-8 h-8 rounded-full flex items-center justify-center font-extrabold">A</span>
-            Amri
+            className="font-bold text-xl flex items-center gap-2 cursor-pointer">
           </div>
           <div className="hidden md:flex gap-8 text-sm font-medium">
             <a href="#tentang" className="hover:text-[#FFB800] transition">Tentang</a>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { PageRoute } from '../types';
 import { StickyProjectCards } from '../components/StickyProjectCards';
+import { ToolsSection } from '../components/ToolsSection';
 import { 
   Play, 
   MapPin, 
@@ -233,6 +234,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           </div>
         </div>
       </section>
+
+      {/* Tools Yang Digunakan Section */}
+      <ToolsSection />
 
       {/* Tentang Saya */}
       <section id="tentang" className="bg-[#2A4D3E] py-24 my-10">

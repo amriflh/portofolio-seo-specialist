@@ -8,6 +8,7 @@ import { TokoKuePage } from './pages/TokoKuePage';
 import { MetaAdsPage } from './pages/MetaAdsPage';
 import { AlatanPage } from './pages/AlatanPage';
 import { motion, AnimatePresence } from 'motion/react';
+import { SmoothScrollWrapper } from './components/SmoothScrollWrapper';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<PageRoute>('home');
@@ -56,10 +57,13 @@ export default function App() {
             exit={{ opacity: 0, y: -20, filter: 'blur(4px)' }}
             transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
           >
-            {renderPage()}
+            <SmoothScrollWrapper>
+              {renderPage()}
+            </SmoothScrollWrapper>
           </motion.div>
         </AnimatePresence>
       )}
     </div>
   );
 }
+

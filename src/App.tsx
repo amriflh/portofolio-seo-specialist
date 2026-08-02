@@ -30,6 +30,7 @@ export default function App() {
       return <TokoKuePage onNavigate={handleNavigate} />;
     case 'meta-ads':
       return <MetaAdsPage onNavigate={handleNavigate} />;
+    case 'alatan':
     case 'alatan-indonesia':
       return <AlatanPage onNavigate={handleNavigate} />;
     case 'home':

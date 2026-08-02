@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 628" width="100%" height="100%" style="background-color: #f8fafc; font-family: Roboto, Arial, sans-serif;">
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="220" height="628" fill="#f1f5f9" />
+  
+  <!-- Site Selector -->
+  <rect x="12" y="16" width="196" height="40" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+  <circle cx="28" cy="36" r="6" fill="#1a73e8" />
+  <text x="42" y="40" font-size="12" font-weight="600" fill="#1e293b">alatanindonesia.id</text>
+  <path d="M185 34 L190 40 L195 34" stroke="#64748b" stroke-width="1.5" fill="none" />
+
+  <!-- Nav Items -->
+  <text x="42" y="92" font-size="13" fill="#475569">Sekilas</text>
+  <text x="42" y="128" font-size="13" fill="#475569">Insight</text>
+  
+  <!-- Active Performa -->
+  <rect x="8" y="148" width="204" height="36" rx="18" fill="#c2e7ff" />
+  <path d="M22 166 L28 160 L33 164 L40 156" stroke="#001d35" stroke-width="2" fill="none" />
+  <text x="46" y="171" font-size="13" font-weight="700" fill="#001d35">Performa</text>
+
+  <text x="42" y="210" font-size="13" fill="#475569">Inspeksi URL</text>
+
+  <text x="20" y="248" font-size="12" font-weight="600" fill="#64748b">Penyusunan indeks</text>
+  <text x="42" y="278" font-size="13" fill="#475569">Halaman</text>
+  <text x="42" y="308" font-size="13" fill="#475569">Peta Situs</text>
+  <text x="42" y="338" font-size="13" fill="#475569">Penghapusan</text>
+
+  <text x="20" y="378" font-size="12" font-weight="600" fill="#64748b">Pengalaman</text>
+  <text x="42" y="408" font-size="13" fill="#475569">Data Web Inti</text>
+  <text x="42" y="438" font-size="13" fill="#475569">HTTPS</text>
+
+  <!-- Main Content Area -->
+  <!-- Top Bar -->
+  <text x="250" y="42" font-size="22" font-weight="500" fill="#1e293b">Performa</text>
+  <text x="1060" y="38" font-size="12" font-weight="600" fill="#1e293b">EKSPOR</text>
+  <text x="960" y="70" font-size="11" fill="#64748b">Terakhir diperbarui: 4,5 jam yang lalu</text>
+
+  <!-- Filter Pills -->
+  <g transform="translate(250, 75)">
+    <rect x="0" y="0" width="230" height="36" rx="8" fill="#e2e8f0" />
+    <text x="12" y="22" font-size="12" fill="#475569">24 jam</text>
+    <text x="58" y="22" font-size="12" fill="#475569">7 hari</text>
+    <text x="98" y="22" font-size="12" fill="#475569">28 hari</text>
+    <text x="144" y="22" font-size="12" fill="#475569">3 bulan</text>
+    <rect x="180" y="4" width="46" height="28" rx="6" fill="#c2e7ff" />
+    <text x="186" y="22" font-size="12" font-weight="700" fill="#001d35">6 bulan</text>
+
+    <rect x="245" y="0" width="150" height="36" rx="8" fill="#ffffff" stroke="#cbd5e1" />
+    <text x="257" y="22" font-size="12" fill="#334155">Jenis penelusuran: Web</text>
+
+    <rect x="405" y="0" width="130" height="36" rx="8" fill="#ffffff" stroke="#cbd5e1" />
+    <text x="417" y="22" font-size="12" fill="#334155">+ Tambahkan filter</text>
+
+    <circle cx="555" cy="18" r="14" fill="#1a73e8" />
+    <path d="M550 14 L560 14 M552 18 L558 18 M554 22 L556 22" stroke="#ffffff" stroke-width="2" />
+
+    <text x="580" y="22" font-size="12" font-weight="600" fill="#1a73e8">Reset filter</text>
+  </g>
+
+  <!-- Metric Cards Box -->
+  <g transform="translate(250, 130)">
+    <rect x="0" y="0" width="910" height="90" rx="8" fill="#ffffff" stroke="#e2e8f0" />
+
+    <!-- Card 1: Total Klik -->
+    <rect x="0" y="0" width="210" height="90" rx="8" fill="#1a73e8" />
+    <text x="16" y="28" font-size="12" font-weight="600" fill="#ffffff">✓ Total klik</text>
+    <text x="16" y="66" font-size="28" font-weight="700" fill="#ffffff">9,82 rb</text>
+
+    <!-- Card 2: Total Tayangan -->
+    <rect x="210" y="0" width="210" height="90" fill="#6b21a8" />
+    <text x="226" y="28" font-size="12" font-weight="600" fill="#ffffff">✓ Total tayangan ikl...</text>
+    <text x="226" y="66" font-size="28" font-weight="700" fill="#ffffff">499 rb</text>
+
+    <!-- Card 3: CTR -->
+    <rect x="420" y="0" width="210" height="90" fill="#ffffff" />
+    <line x1="420" y1="0" x2="420" y2="90" stroke="#e2e8f0" />
+    <text x="436" y="28" font-size="12" fill="#64748b">☐ CTR rata-rata</text>
+    <text x="436" y="66" font-size="28" font-weight="500" fill="#1e293b">2%</text>
+
+    <!-- Card 4: Posisi -->
+    <rect x="630" y="0" width="280" height="90" fill="#ffffff" />
+    <line x1="630" y1="0" x2="630" y2="90" stroke="#e2e8f0" />
+    <text x="646" y="28" font-size="12" fill="#64748b">☐ Posisi rata-rata</text>
+    <text x="646" y="66" font-size="28" font-weight="500" fill="#1e293b">5,7</text>
+  </g>
+
+  <!-- Chart Area -->
+  <g transform="translate(250, 240)">
+    <rect x="0" y="0" width="910" height="350" rx="8" fill="#ffffff" stroke="#e2e8f0" />
+
+    <!-- Y Axis Labels Left (Klik) -->
+    <text x="30" y="30" font-size="11" fill="#94a3b8">Klik</text>
+    <text x="30" y="45" font-size="11" fill="#64748b">225</text>
+    <line x1="30" y1="52" x2="880" y2="52" stroke="#f1f5f9" stroke-width="1" />
+
+    <text x="30" y="140" font-size="11" fill="#64748b">150</text>
+    <line x1="30" y1="147" x2="880" y2="147" stroke="#f1f5f9" stroke-width="1" />
+
+    <text x="30" y="230" font-size="11" fill="#64748b">75</text>
+    <line x1="30" y1="237" x2="880" y2="237" stroke="#f1f5f9" stroke-width="1" />
+
+    <text x="30" y="300" font-size="11" fill="#64748b">0</text>
+    <line x1="30" y1="300" x2="880" y2="300" stroke="#cbd5e1" stroke-width="1.5" />
+
+    <!-- Y Axis Labels Right (Tayangan) -->
+    <text x="840" y="30" font-size="11" fill="#94a3b8">Tayangan</text>
+    <text x="850" y="45" font-size="11" fill="#64748b">7,5 rb</text>
+    <text x="850" y="180" font-size="11" fill="#64748b">2,5 rb</text>
+    <text x="870" y="300" font-size="11" fill="#64748b">0</text>
+
+    <!-- X Axis Dates -->
+    <g transform="translate(0, 320)" font-size="10" fill="#64748b">
+      <text x="30" y="0">01/02/26</text>
+      <text x="95" y="0">15/02/26</text>
+      <text x="160" y="0">01/03/26</text>
+      <text x="225" y="0">15/03/26</text>
+      <text x="290" y="0">29/03/26</text>
+      <text x="355" y="0">12/04/26</text>
+      <text x="420" y="0">26/04/26</text>
+      <text x="485" y="0">10/05/26</text>
+      <text x="550" y="0">24/05/26</text>
+      <text x="615" y="0">07/06/26</text>
+      <text x="680" y="0">21/06/26</text>
+      <text x="745" y="0">05/07/26</text>
+      <text x="810" y="0">19/07/26</text>
+    </g>
+
+    <!-- Purple Line (Tayangan) -->
+    <path d="M 40 230 
+             L 55 190 L 70 200 L 85 240 L 100 210 L 115 195 L 130 220 L 145 180 L 160 170 L 175 220 L 190 180 L 205 170 L 220 230 L 235 250 L 250 240 L 265 210
+             L 280 170 L 295 215 L 310 180 L 325 210 L 340 180 L 355 200 L 370 210 L 385 190 L 400 180 L 415 220 L 430 190 L 445 170 L 460 210 L 475 160 L 490 200
+             L 505 140 L 520 210 L 535 180 L 550 160 L 565 230 L 580 180 L 595 100 L 610 60 L 625 150 L 640 120 L 655 180 L 670 120 L 685 180 L 700 100 L 715 120
+             L 730 110 L 745 150 L 760 110 L 775 160 L 790 120 L 805 130 L 820 180 L 835 250" 
+          stroke="#7c3aed" stroke-width="2.5" fill="none" stroke-linejoin="round" />
+
+    <!-- Blue Line (Klik) -->
+    <path d="M 40 260 
+             L 55 220 L 70 230 L 85 270 L 100 245 L 115 230 L 130 250 L 145 220 L 160 210 L 175 250 L 190 220 L 205 210 L 220 260 L 235 285 L 250 270 L 265 240
+             L 280 210 L 295 245 L 310 220 L 325 240 L 340 210 L 355 225 L 370 240 L 385 220 L 400 210 L 415 250 L 430 220 L 445 200 L 460 240 L 475 190 L 490 230
+             L 505 180 L 520 240 L 535 210 L 550 190 L 565 260 L 580 210 L 595 140 L 610 90 L 625 180 L 640 150 L 655 210 L 670 150 L 685 210 L 700 130 L 715 150
+             L 730 130 L 745 180 L 760 140 L 775 190 L 790 150 L 805 160 L 820 210 L 835 280" 
+          stroke="#1a73e8" stroke-width="2.5" fill="none" stroke-linejoin="round" />
+  </g>
+</svg>

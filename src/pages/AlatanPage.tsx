@@ -294,34 +294,111 @@ export const AlatanPage: React.FC<AlatanPageProps> = ({ onNavigate }) => {
           </div>
 
           {/* GSC Charts Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-            <div className="bg-white rounded-3xl p-5 border border-slate-200 shadow-sm flex flex-col h-full">
-              <div className="mb-3">
-                <h3 className="font-bold text-[#214634] text-base md:text-lg">Situs Alatan</h3>
-                <p className="text-xs text-slate-500">Tren Klik Organik (GSC)</p>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+            <div className="bg-white rounded-3xl p-5 md:p-6 border border-slate-200 shadow-sm flex flex-col h-full lg:col-span-2">
+              <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
+                <div>
+                  <h3 className="font-bold text-[#214634] text-lg md:text-xl">Situs Alatan & Kinerja Kata Kunci</h3>
+                  <p className="text-xs md:text-sm text-slate-500">Laporan Performa Google Search Console (6 Bulan terakhir: alatanindonesia.id)</p>
+                </div>
+                <div className="flex flex-wrap items-center gap-2 text-xs font-semibold">
+                  <span className="px-2.5 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-200">
+                    9,82 rb Klik
+                  </span>
+                  <span className="px-2.5 py-1 rounded-full bg-purple-50 text-purple-700 border border-purple-200">
+                    499 rb Tayangan
+                  </span>
+                  <span className="px-2.5 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200">
+                    CTR 2%
+                  </span>
+                  <span className="px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">
+                    Posisi 5,7
+                  </span>
+                </div>
               </div>
-              <div className="rounded-2xl overflow-hidden bg-slate-50 flex-1 border border-slate-100 flex items-center justify-center p-2 min-h-[160px]">
-                <img src="https://static.wixstatic.com/media/419f05_2bfdb07a98354779b409331c1cdba223~mv2.png" alt="Traffic GSC 1" className="w-full h-auto object-contain" />
+              <div className="rounded-2xl overflow-hidden bg-slate-50 flex-1 border border-slate-200 flex items-center justify-center p-2 min-h-[220px]">
+                <img src="https://static.wixstatic.com/media/419f05_b78d4c597d574d338c2152a8e53c9c77~mv2.webp" alt="Laporan Performa GSC Situs Alatan 6 Bulan" className="w-full h-auto object-contain rounded-xl shadow-sm" />
               </div>
             </div>
 
-            <div className="bg-white rounded-3xl p-5 border border-slate-200 shadow-sm flex flex-col h-full">
-              <div className="mb-3">
-                <h3 className="font-bold text-[#214634] text-base md:text-lg">Kinerja Kata Kunci</h3>
-                <p className="text-xs text-slate-500">Impresi pada kueri spesifik</p>
+            <div className="bg-white rounded-3xl p-5 md:p-6 border border-slate-200 shadow-sm flex flex-col h-full">
+              <div className="mb-4">
+                <h3 className="font-bold text-[#214634] text-lg md:text-xl">Analisis SEMrush</h3>
+                <p className="text-xs md:text-sm text-slate-500">Pemantauan kinerja kompetitor</p>
               </div>
-              <div className="rounded-2xl overflow-hidden bg-slate-50 flex-1 border border-slate-100 flex items-center justify-center p-2 min-h-[160px]">
-                <img src="https://static.wixstatic.com/media/419f05_eec189bd0a47477782cd69fc30ef4050~mv2.png" alt="Traffic GSC 2" className="w-full h-auto object-contain" />
-              </div>
-            </div>
-
-            <div className="bg-white rounded-3xl p-5 border border-slate-200 shadow-sm flex flex-col h-full md:col-span-2 lg:col-span-1">
-              <div className="mb-3">
-                <h3 className="font-bold text-[#214634] text-base md:text-lg">Analisis SEMrush</h3>
-                <p className="text-xs text-slate-500">Pemantauan kinerja kompetitor</p>
-              </div>
-              <div className="rounded-2xl overflow-hidden bg-slate-50 flex-1 border border-slate-100 flex items-center justify-center p-2 min-h-[160px]">
+              <div className="rounded-2xl overflow-hidden bg-slate-50 flex-1 border border-slate-200 flex items-center justify-center p-2 min-h-[220px]">
                 <img src="https://static.wixstatic.com/media/419f05_87272df6207d4bb38010311ee10cdc49~mv2.webp" alt="SEMrush Analysis" className="w-full h-auto object-contain" />
+              </div>
+            </div>
+          </div>
+
+          {/* Additional GSC Reports Section - Full Width Cards */}
+          <div className="space-y-8 mb-8">
+            {/* konsultantkdn.id */}
+            <div className="bg-white rounded-3xl p-6 md:p-8 border border-slate-200 shadow-sm flex flex-col">
+              <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
+                <div>
+                  <h3 className="font-bold text-[#214634] text-xl md:text-2xl">Situs konsultantkdn.id & Kinerja Kata Kunci</h3>
+                  <p className="text-xs md:text-sm text-slate-500 mt-1">Laporan Performa Google Search Console (6 Bulan terakhir: konsultantkdn.id)</p>
+                </div>
+                <div>
+                  <span className="text-xs font-bold text-[#F5A623] uppercase tracking-wider block mb-2">Informasi Metrik Utama</span>
+                  <div className="flex flex-wrap items-center gap-2 text-xs font-semibold">
+                    <span className="px-3 py-1.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200">
+                      Total Klik
+                    </span>
+                    <span className="px-3 py-1.5 rounded-full bg-purple-50 text-purple-700 border border-purple-200">
+                      Tayangan Total
+                    </span>
+                    <span className="px-3 py-1.5 rounded-full bg-slate-100 text-slate-700 border border-slate-200">
+                      CTR Rata-rata
+                    </span>
+                    <span className="px-3 py-1.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">
+                      Posisi Rata-rata
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="rounded-2xl overflow-hidden bg-slate-50 border border-slate-200 p-2 md:p-4 min-h-[300px]">
+                <img 
+                  src="https://static.wixstatic.com/media/419f05_1220ff134eda4c48bd7f92ebc0a0bfb1~mv2.webp" 
+                  alt="Laporan Performa Google Search Console konsultantkdn.id" 
+                  className="w-full h-auto object-contain rounded-xl shadow-sm" 
+                />
+              </div>
+            </div>
+
+            {/* konsultanpemerintah.com */}
+            <div className="bg-white rounded-3xl p-6 md:p-8 border border-slate-200 shadow-sm flex flex-col">
+              <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
+                <div>
+                  <h3 className="font-bold text-[#214634] text-xl md:text-2xl">konsultanpemerintah.com & Kinerja Kata Kunci</h3>
+                  <p className="text-xs md:text-sm text-slate-500 mt-1">Laporan Performa Google Search Console (6 Bulan terakhir: konsultanpemerintah.com)</p>
+                </div>
+                <div>
+                  <span className="text-xs font-bold text-[#F5A623] uppercase tracking-wider block mb-2">Informasi Metrik Utama</span>
+                  <div className="flex flex-wrap items-center gap-2 text-xs font-semibold">
+                    <span className="px-3 py-1.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200">
+                      Total Klik
+                    </span>
+                    <span className="px-3 py-1.5 rounded-full bg-purple-50 text-purple-700 border border-purple-200">
+                      Tayangan Total
+                    </span>
+                    <span className="px-3 py-1.5 rounded-full bg-slate-100 text-slate-700 border border-slate-200">
+                      CTR Rata-rata
+                    </span>
+                    <span className="px-3 py-1.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">
+                      Posisi Rata-rata
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="rounded-2xl overflow-hidden bg-slate-50 border border-slate-200 p-2 md:p-4 min-h-[300px]">
+                <img 
+                  src="https://static.wixstatic.com/media/419f05_7e1a48f78ec3486aa9cf04388778288d~mv2.webp" 
+                  alt="Laporan Performa Google Search Console konsultanpemerintah.com" 
+                  className="w-full h-auto object-contain rounded-xl shadow-sm" 
+                />
               </div>
             </div>
           </div>

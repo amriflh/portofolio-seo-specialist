@@ -1,4 +1,6 @@
 import React from 'react';
+import { motion } from 'motion/react';
+import { AnimatedSection, AnimatedCard } from '../components/AnimatedSection';
 import { PageRoute } from '../types';
 import { ArrowLeft, ArrowUpRight, CheckCircle, Info, Lightbulb, MessageSquare, Rocket, Store, Calendar, Tag, Mail } from 'lucide-react';
 

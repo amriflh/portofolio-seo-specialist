@@ -1,4 +1,6 @@
 import React from 'react';
+import { motion } from 'motion/react';
+import { AnimatedSection, AnimatedCard } from '../components/AnimatedSection';
 import { PageRoute } from '../types';
 import { ArrowLeft, TrendingUp, Target, AlertCircle, ThumbsUp, ThumbsDown, Check, X, GraduationCap, Briefcase, Users, Handshake, MessageSquare, Search, Star } from 'lucide-react';
 

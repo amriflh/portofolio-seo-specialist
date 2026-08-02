@@ -1,4 +1,6 @@
 import React from 'react';
+import { motion } from 'motion/react';
+import { AnimatedSection, AnimatedCard } from '../components/AnimatedSection';
 import { PageRoute } from '../types';
 import { ArrowLeft, ArrowUpRight, Briefcase, AlertCircle, CheckCircle, ChevronRight, ShoppingBag, FileText, TrendingUp, Lightbulb, Info, Mail } from 'lucide-react';
 
@@ -113,7 +115,7 @@ export const TokoKuePage: React.FC<TokoKuePageProps> = ({ onNavigate }) => {
               <h4 className="text-xl md:text-2xl font-bold text-[#214634] mb-4">Riset Keyword Mendalam & Pemilihan Target</h4>
               <p className="mb-4 leading-relaxed">
                 Saya telah melakukan riset keyword secara mendalam menggunakan <strong>Google Keyword Planner</strong> dan analisis <strong>"People Also Ask"</strong> di Google. Fokus utama adalah mengidentifikasi keyword yang paling relevan dengan intensi pengguna.
-                Berdasarkan wawancara langsung dengan pelanggan dan analisis perilaku pengguna smartphone, saya menemukan bahwa 9 dari 10 orang mencari kue kering di Google menggunakan kombinasi keyword produk dan lokasi (contoh: <code className="bg-slate-100 px-1.5 py-0.5 rounded text-sm text-[#214634]">"jual kue kering enak di Kramat Jati"</code>) atau keyword transaksional langsung (<code class="bg-slate-100 px-1.5 py-0.5 rounded text-sm text-[#214634]">"beli kue nastar online"</code>).
+                Berdasarkan wawancara langsung dengan pelanggan dan analisis perilaku pengguna smartphone, saya menemukan bahwa 9 dari 10 orang mencari kue kering di Google menggunakan kombinasi keyword produk dan lokasi (contoh: <code className="bg-slate-100 px-1.5 py-0.5 rounded text-sm text-[#214634]">"jual kue kering enak di Kramat Jati"</code>) atau keyword transaksional langsung (<code className="bg-slate-100 px-1.5 py-0.5 rounded text-sm text-[#214634]">"beli kue nastar online"</code>).
               </p>
               
               <ul className="space-y-4 mb-6">

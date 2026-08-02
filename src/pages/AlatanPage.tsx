@@ -1,4 +1,6 @@
 import React, { useRef, useState } from 'react';
+import { motion } from 'motion/react';
+import { AnimatedSection, AnimatedCard } from '../components/AnimatedSection';
 import { PageRoute } from '../types';
 import { 
   ArrowLeft, 

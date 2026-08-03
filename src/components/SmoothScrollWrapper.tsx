@@ -33,11 +33,21 @@ export const SmoothScrollWrapper: React.FC<SmoothScrollWrapperProps> = ({ childr
     gsap.ticker.add(updateLenis);
     gsap.ticker.lagSmoothing(0);
 
+    // Helper to check if element is inside excluded section ("Projek Pribadi")
+    const isExcluded = (el: Element): boolean => {
+      return !!el.closest('#portofolio, .no-scroll-anim, [data-no-scroll="true"]');
+    };
+
     // Set up GSAP ScrollTrigger animations for sections & cards in this page
     const ctx = gsap.context(() => {
-      // 1. Reveal headers & titles with masked line effect
-      const headings = containerRef.current?.querySelectorAll('h1, h2, h3, .animate-heading');
-      headings?.forEach((heading) => {
+      if (!containerRef.current) return;
+
+      // 1. Reveal headers & titles with masked line / skew reveal effect (excluding Projek Pribadi)
+      const headings = (Array.from(
+        containerRef.current.querySelectorAll('h1, h2, h3, h4, .animate-heading')
+      ) as HTMLElement[]).filter((el) => !isExcluded(el));
+
+      headings.forEach((heading) => {
         gsap.fromTo(
           heading,
           {
@@ -49,7 +59,7 @@ export const SmoothScrollWrapper: React.FC<SmoothScrollWrapperProps> = ({ childr
             y: 0,
             opacity: 1,
             skewY: 0,
-            duration: 1,
+            duration: 0.9,
             ease: 'power3.out',
             scrollTrigger: {
               trigger: heading,
@@ -60,14 +70,49 @@ export const SmoothScrollWrapper: React.FC<SmoothScrollWrapperProps> = ({ childr
         );
       });
 
-      // 2. Parallax and subtle skew effect on card backgrounds and image wrappers
-      const cardContainers = containerRef.current?.querySelectorAll('.bg-white, .bg-slate-50, .border-slate-200');
-      cardContainers?.forEach((card) => {
+      // 2. Grid cards & containers animation with staggered reveal (excluding Projek Pribadi)
+      const gridContainers = (Array.from(
+        containerRef.current.querySelectorAll('.grid')
+      ) as HTMLElement[]).filter((el) => !isExcluded(el));
+
+      gridContainers.forEach((grid) => {
+        const items = (Array.from(grid.children) as HTMLElement[]).filter((child) => !isExcluded(child));
+        if (items.length > 0) {
+          gsap.fromTo(
+            items,
+            {
+              y: 40,
+              opacity: 0,
+              scale: 0.96,
+            },
+            {
+              y: 0,
+              opacity: 1,
+              scale: 1,
+              duration: 0.8,
+              stagger: 0.1,
+              ease: 'power2.out',
+              scrollTrigger: {
+                trigger: grid,
+                start: 'top 85%',
+                toggleActions: 'play none none reverse',
+              },
+            }
+          );
+        }
+      });
+
+      // 3. Standalone cards / experience blocks not inside a direct grid
+      const standaloneCards = (Array.from(
+        containerRef.current.querySelectorAll('.bg-slate-50, .bg-white, .border-slate-200')
+      ) as HTMLElement[]).filter((el) => !isExcluded(el) && !el.closest('.grid'));
+
+      standaloneCards.forEach((card) => {
         gsap.fromTo(
           card,
           {
             y: 30,
-            opacity: 0.9,
+            opacity: 0.85,
           },
           {
             y: 0,
@@ -76,17 +121,45 @@ export const SmoothScrollWrapper: React.FC<SmoothScrollWrapperProps> = ({ childr
             ease: 'power2.out',
             scrollTrigger: {
               trigger: card,
-              start: 'top 92%',
-              end: 'top 60%',
-              scrub: 0.5,
+              start: 'top 90%',
+              toggleActions: 'play none none reverse',
             },
           }
         );
       });
 
-      // 3. Image parallax reveal effect inside cards (especially GSC report images & charts)
-      const images = containerRef.current?.querySelectorAll('img');
-      images?.forEach((img) => {
+      // 4. Text paragraphs (excluding Projek Pribadi)
+      const paragraphs = (Array.from(
+        containerRef.current.querySelectorAll('p, .text-block')
+      ) as HTMLElement[]).filter((el) => !isExcluded(el) && !el.closest('.grid') && !el.closest('h1, h2, h3, h4'));
+
+      paragraphs.forEach((p) => {
+        gsap.fromTo(
+          p,
+          {
+            y: 20,
+            opacity: 0,
+          },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.7,
+            ease: 'power2.out',
+            scrollTrigger: {
+              trigger: p,
+              start: 'top 92%',
+              toggleActions: 'play none none reverse',
+            },
+          }
+        );
+      });
+
+      // 5. Image reveal effect (excluding Projek Pribadi)
+      const images = (Array.from(
+        containerRef.current.querySelectorAll('img')
+      ) as HTMLImageElement[]).filter((el) => !isExcluded(el));
+
+      images.forEach((img) => {
         gsap.fromTo(
           img,
           {
@@ -96,7 +169,7 @@ export const SmoothScrollWrapper: React.FC<SmoothScrollWrapperProps> = ({ childr
           {
             scale: 1,
             opacity: 1,
-            duration: 1,
+            duration: 0.9,
             ease: 'power2.out',
             scrollTrigger: {
               trigger: img,
@@ -107,6 +180,8 @@ export const SmoothScrollWrapper: React.FC<SmoothScrollWrapperProps> = ({ childr
         );
       });
     }, containerRef);
+
+
 
     return () => {
       ctx.revert();

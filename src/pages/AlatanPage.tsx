@@ -122,11 +122,11 @@ export const AlatanPage: React.FC<AlatanPageProps> = ({ onNavigate }) => {
             </div>
           </div>
           <div className="flex-1 w-full max-w-md lg:max-w-none relative">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/3] bg-[#214634]">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/3] bg-[#214634] group">
               <img 
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                src="https://static.wixstatic.com/media/419f05_6075e323d1d5474d975eb9995aa0f4a3~mv2.webp" 
                 alt="Profesional bekerja dengan data" 
-                className="w-full h-full object-cover opacity-80"
+                className="w-full h-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#214634]/90 to-transparent"></div>
               <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6">
@@ -488,13 +488,15 @@ export const AlatanPage: React.FC<AlatanPageProps> = ({ onNavigate }) => {
             <div className="lg:w-1/2 w-full">
               <div className="relative group">
                 <div ref={sliderHomeRef} className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 scrollbar-none">
-                  <div className="snap-center shrink-0 w-[90%] md:w-[85%] rounded-2xl overflow-hidden border border-slate-100 bg-slate-50 relative aspect-[4/3]">
-                    <div className="absolute top-3 left-3 bg-red-500 text-white text-[10px] font-bold px-2.5 py-1 rounded shadow z-20">SEBELUM OPTIMASI</div>
-                    <img src="https://static.wixstatic.com/media/419f05_3961794593ad4da8917c0528afa898ef~mv2.webp?w=800&q=80" alt="Home Sebelum" className="w-full h-full object-cover opacity-70" />
+                  <div className="snap-center shrink-0 w-[90%] md:w-[85%] rounded-2xl overflow-hidden border border-slate-100 bg-slate-50 relative aspect-[4/3] group/card cursor-pointer">
+                    <div className="absolute top-3 left-3 bg-red-500 text-white text-[10px] font-bold px-2.5 py-1 rounded shadow z-20 transition-opacity group-hover/card:opacity-0">SEBELUM OPTIMASI</div>
+                    <div className="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded shadow z-20 opacity-0 group-hover/card:opacity-100 transition-opacity">SESUDAH OPTIMASI (HOVER)</div>
+                    <img src="https://static.wixstatic.com/media/419f05_3961794593ad4da8917c0528afa898ef~mv2.webp?w=800&q=80" alt="Home Sebelum" className="w-full h-full object-cover opacity-80 group-hover/card:opacity-0 transition-opacity duration-500" />
+                    <img src="https://static.wixstatic.com/media/419f05_6075e323d1d5474d975eb9995aa0f4a3~mv2.webp" alt="Home Hover Sesudah" className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/card:opacity-100 transition-opacity duration-500" />
                   </div>
                   <div className="snap-center shrink-0 w-[90%] md:w-[85%] rounded-2xl overflow-hidden border border-slate-100 bg-slate-50 relative aspect-[4/3]">
                     <div className="absolute top-3 left-3 bg-green-500 text-white text-[10px] font-bold px-2.5 py-1 rounded shadow z-20">SESUDAH OPTIMASI</div>
-                    <img src="https://static.wixstatic.com/media/419f05_6c3ecffa2db84bd1bd465752cbeb59b1~mv2.webp?w=800&q=80" alt="Home Sesudah" className="w-full h-full object-cover" />
+                    <img src="https://static.wixstatic.com/media/419f05_6075e323d1d5474d975eb9995aa0f4a3~mv2.webp" alt="Home Sesudah" className="w-full h-full object-cover" />
                   </div>
                 </div>
                 <button onClick={() => scrollSlider(sliderHomeRef, -1)} className="absolute left-2 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white shadow border border-slate-200 flex items-center justify-center text-[#214634] cursor-pointer">

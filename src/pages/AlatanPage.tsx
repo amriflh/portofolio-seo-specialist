@@ -218,7 +218,7 @@ export const AlatanPage: React.FC<AlatanPageProps> = ({ onNavigate }) => {
                 'Perancangan Halaman Lead Magnet E-Book',
                 'Pembuatan Halaman Program Bimtek',
                 'Optimasi Kecepatan & Display Home Alatan',
-                'Optimasi Tampilan Dokumen Regulasi',
+                'Optimasi Tampilan Halaman dan Dokumen Regulasi',
                 'Desain Web: KonsultanTKDN.id & KonsultanPemerintah.com'
               ].map((scope, idx) => (
                 <div key={idx} className="flex items-start gap-3">

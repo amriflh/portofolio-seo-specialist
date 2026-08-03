@@ -105,7 +105,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           
           <div className="w-[320px] h-[420px] bg-slate-200 rounded-[100px] overflow-hidden border-8 border-white shadow-xl relative flex items-center justify-center">
             <img 
-              src="https://static.wixstatic.com/media/419f05_d5417751fe2d4a5eba05a358926cb846~mv2.jpg" 
+              src="https://static.wixstatic.com/media/419f05_1bf969065e1848c3bb32f8ee81e33290~mv2.webp" 
               alt="Foto Profil Ahmad Amri Falah" 
               className="w-full h-full object-cover" 
               onError={(e) => {

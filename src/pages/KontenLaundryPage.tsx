@@ -11,28 +11,8 @@ interface KontenLaundryPageProps {
 export const KontenLaundryPage: React.FC<KontenLaundryPageProps> = ({ onNavigate }) => {
   return (
     <div className="min-h-screen bg-[#F8FAFC] font-sans antialiased text-slate-600 selection:bg-[#F5A623] selection:text-[#214634]">
-      {/* Navbar */}
-      <nav className="fixed top-0 left-0 w-full z-50 bg-[#F8FAFC]/80 backdrop-blur-md border-b border-slate-200/60">
-        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <button 
-              onClick={() => onNavigate('home')} 
-              className="flex items-center gap-2 text-sm font-semibold text-slate-500 hover:text-[#214634] transition-colors bg-white border border-slate-200 px-4 py-2 rounded-full shadow-sm hover:shadow-md cursor-pointer"
-            >
-              <ArrowLeft className="w-4 h-4" /> Kembali
-            </button>
-          </div>
-          <div className="flex items-center gap-4">
-            <a href="#studi-kasus" className="hidden md:block text-sm font-semibold text-slate-600 hover:text-[#214634] transition-colors">Studi Kasus</a>
-            <a href="#kontak" className="bg-[#F5A623] text-[#214634] font-bold text-sm px-6 py-2.5 rounded-full hover:bg-yellow-400 transition-colors shadow-sm">
-              Hubungi Saya
-            </a>
-          </div>
-        </div>
-      </nav>
-
       {/* Header */}
-      <header className="pt-36 pb-16 px-6 max-w-7xl mx-auto relative">
+      <header className="pt-8 pb-16 px-6 max-w-7xl mx-auto relative">
         <div className="relative z-10 flex flex-col md:flex-row items-center gap-12 bg-white rounded-3xl shadow-xl border border-slate-200 p-8 md:p-14 overflow-hidden">
           <div className="w-full md:w-2/3 flex flex-col justify-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#214634] leading-[1.1] tracking-tight mb-6">

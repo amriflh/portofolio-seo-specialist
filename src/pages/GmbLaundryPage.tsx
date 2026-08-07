@@ -12,28 +12,8 @@ export const GmbLaundryPage: React.FC<GmbLaundryPageProps> = ({ onNavigate }) =>
   return (
     <div className="min-h-screen bg-[#F8FAFC] text-slate-600 font-sans antialiased selection:bg-[#F5A623]/30 selection:text-[#214634]">
       
-      {/* Sticky Navbar */}
-      <nav className="sticky top-0 z-50 w-full bg-[#F8FAFC]/80 backdrop-blur-md border-b border-slate-200/50">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <button 
-            onClick={() => onNavigate('home')} 
-            className="flex items-center gap-2 text-[#214634] font-bold hover:text-[#F5A623] transition-colors cursor-pointer"
-          >
-            <ArrowLeft className="w-5 h-5" />
-            <span className="hidden sm:inline">Kembali ke Portofolio</span>
-          </button>
-          <div className="flex items-center gap-4">
-            <a href="#latar-belakang" className="hidden md:inline text-sm font-semibold text-slate-600 hover:text-[#214634] transition-colors">Studi Kasus</a>
-            <a href="#hasil" className="hidden md:inline text-sm font-semibold text-slate-600 hover:text-[#214634] transition-colors">Hasil Akhir</a>
-            <a href="https://wa.me/62895326089411" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center bg-[#F5A623] text-slate-900 font-bold text-sm px-6 py-2.5 rounded-full hover:bg-yellow-500 transition-all shadow-md">
-              Hubungi Saya
-            </a>
-          </div>
-        </div>
-      </nav>
-
       {/* Hero Header */}
-      <header className="pt-20 pb-16 px-6">
+      <header className="pt-8 pb-16 px-6">
         <div className="max-w-5xl mx-auto text-center space-y-8">
           <div className="inline-flex items-center gap-2 bg-white border border-slate-200 px-4 py-2 rounded-full shadow-sm mb-4">
             <TrendingUp className="text-[#F5A623] w-4 h-4" />

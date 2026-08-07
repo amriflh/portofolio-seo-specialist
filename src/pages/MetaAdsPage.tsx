@@ -155,23 +155,8 @@ export const MetaAdsPage: React.FC<MetaAdsPageProps> = ({ onNavigate }) => {
   return (
     <div className="min-h-screen bg-[#F8FAFC] text-slate-700 font-sans antialiased selection:bg-[#F5A623] selection:text-[#214634]">
       
-      {/* Nav */}
-      <nav className="sticky top-0 z-50 bg-[#F8FAFC]/80 backdrop-blur-md border-b border-slate-200/50">
-        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          <button 
-            onClick={() => onNavigate('home')} 
-            className="inline-flex items-center gap-2 text-[#214634] font-semibold text-sm hover:text-[#F5A623] transition-colors cursor-pointer"
-          >
-            <ArrowLeft className="w-4 h-4" /> Kembali ke Beranda
-          </button>
-          <a href="#contact" className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-[#214634] text-white text-sm font-semibold hover:bg-[#214634]/90 transition-all shadow-sm">
-            Hubungi Saya
-          </a>
-        </div>
-      </nav>
-
       {/* Hero */}
-      <section className="relative pt-12 pb-16 lg:pt-20 lg:pb-20 overflow-hidden">
+      <section className="relative pt-8 pb-16 lg:pt-12 lg:pb-20 overflow-hidden">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
             <div className="lg:w-1/2 space-y-6 text-center lg:text-left">

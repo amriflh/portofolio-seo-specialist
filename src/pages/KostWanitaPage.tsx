@@ -39,19 +39,8 @@ export const KostWanitaPage: React.FC<KostWanitaPageProps> = ({ onNavigate }) =>
   return (
     <div className="min-h-screen bg-[#F8FAFC] text-slate-600 font-sans antialiased selection:bg-[#F5A623] selection:text-[#214634]">
       
-      {/* Sticky top button */}
-      <div className="sticky top-0 z-50 w-full px-4 sm:px-6 py-4 flex justify-between items-center bg-[#F8FAFC]/80 backdrop-blur-md border-b border-slate-200/50">
-        <button 
-          onClick={() => onNavigate('home')} 
-          className="flex items-center gap-2 bg-white text-[#214634] px-5 py-2.5 sm:px-6 sm:py-3 rounded-full font-bold text-xs sm:text-sm shadow-sm border border-slate-200 hover:shadow-md transition-all cursor-pointer"
-        >
-          <ArrowLeft className="w-4 h-4" />
-          <span>Kembali ke Beranda</span>
-        </button>
-      </div>
-
       {/* 1. Hero Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-12 lg:pb-16">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12 lg:pb-16">
         <div className="bg-[#214634] rounded-[2rem] sm:rounded-[2.5rem] p-6 sm:p-10 md:p-16 lg:p-20 text-white shadow-xl relative overflow-hidden flex flex-col items-center text-center">
           <div className="absolute top-0 right-0 w-[20rem] sm:w-[30rem] md:w-[40rem] h-[20rem] sm:w-[30rem] md:h-[40rem] bg-[#F5A623]/20 rounded-full blur-[80px] md:blur-[100px] -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
           

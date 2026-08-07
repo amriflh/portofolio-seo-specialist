@@ -75,35 +75,8 @@ export const AlatanPage: React.FC<AlatanPageProps> = ({ onNavigate }) => {
   return (
     <div className="min-h-screen bg-[#F8FAFC] text-slate-800 font-sans antialiased relative">
       
-      {/* Top Navbar */}
-      <nav className="fixed w-full top-0 z-50 bg-[#F8FAFC]/80 backdrop-blur-md border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16 md:h-20">
-            <div className="flex-shrink-0 flex items-center gap-3">
-              <button 
-                onClick={() => onNavigate('home')} 
-                className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-slate-100 text-slate-600 hover:bg-[#214634] hover:text-white transition-all text-xs md:text-sm font-semibold border border-slate-200 cursor-pointer"
-              >
-                <ArrowLeft className="w-4 h-4 mr-1.5" />
-                <span>Kembali</span>
-              </button>
-              <span className="font-bold text-base md:text-xl text-[#214634] tracking-tight hidden sm:block border-l border-slate-300 pl-3">
-                Portofolio SEO & Web Dev
-              </span>
-            </div>
-            <div className="flex items-center gap-3 md:gap-4">
-              <a href="#pengalaman" className="hidden sm:block text-xs md:text-sm font-medium text-slate-600 hover:text-[#214634] transition-colors">Pengalaman</a>
-              <a href="#studi-kasus" className="hidden sm:block text-xs md:text-sm font-medium text-slate-600 hover:text-[#214634] transition-colors">Studi Kasus</a>
-              <a href="https://wa.me/62895326089411" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center px-4 py-2 md:px-6 md:py-2.5 border border-transparent text-xs md:text-sm font-bold rounded-full text-[#214634] bg-[#F5A623] hover:bg-yellow-400 transition-colors shadow-sm">
-                Wawancara
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
-
       {/* Main Content */}
-      <main className="pt-24 md:pt-32 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <main className="pt-8 md:pt-12 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         
         {/* Hero Section */}
         <section className="flex flex-col lg:flex-row gap-10 lg:gap-12 items-center mb-16 md:mb-24">

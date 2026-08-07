@@ -34,33 +34,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
   return (
     <div className="min-h-screen bg-white font-sans text-slate-800 overflow-x-hidden">
       
-      {/* Top Navigation */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
-        <nav className="bg-[#2A4D3E] text-white rounded-full px-8 py-4 flex flex-col md:flex-row justify-between items-center gap-4 shadow-lg">
-          <div 
-            onClick={() => onNavigate('home')} 
-            className="font-bold text-xl flex items-center gap-2 cursor-pointer"
-          >
-          </div>
-          <div className="hidden md:flex gap-8 text-sm font-medium">
-            <a href="#tentang" className="hover:text-[#FFB800] transition">Tentang</a>
-            <a href="#pengalaman" className="hover:text-[#FFB800] transition">Pengalaman</a>
-            <a href="#portofolio" className="hover:text-[#FFB800] transition">Portofolio</a>
-            <a href="#layanan" className="hover:text-[#FFB800] transition">Layanan</a>
-          </div>
-          <a 
-            href="https://wa.me/62895326089411" 
-            target="_blank" 
-            rel="noreferrer" 
-            className="bg-white text-[#2A4D3E] px-6 py-2 rounded-full font-bold text-sm hover:bg-gray-100 transition shadow-sm"
-          >
-            Hubungi Saya
-          </a>
-        </nav>
-      </div>
-
       {/* Hero Section */}
-      <header className="max-w-7xl mx-auto px-6 pt-8 pb-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <header className="max-w-7xl mx-auto px-6 pt-10 pb-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div>
           <div className="inline-block border-2 border-slate-200 px-4 py-2 relative mb-6">
             <div className="absolute -top-1 -left-1 w-2 h-2 bg-slate-200"></div>

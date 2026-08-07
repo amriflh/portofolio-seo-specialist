@@ -12,25 +12,8 @@ export const TokoKuePage: React.FC<TokoKuePageProps> = ({ onNavigate }) => {
   return (
     <div className="min-h-screen bg-[#F8FAFC] text-slate-600 font-sans antialiased selection:bg-[#F5A623] selection:text-white">
       
-      {/* Navbar */}
-      <nav className="sticky top-0 z-50 w-full backdrop-blur-md bg-[#F8FAFC]/80 border-b border-slate-200/50">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <button 
-            onClick={() => onNavigate('home')} 
-            className="flex items-center gap-2 text-sm font-semibold text-slate-500 hover:text-[#214634] transition-colors cursor-pointer"
-          >
-            <ArrowLeft className="w-4 h-4" /> Kembali ke Beranda
-          </button>
-          <div className="flex items-center gap-4">
-            <a href="#kontak" className="bg-[#214634] hover:bg-[#214634]/90 text-white text-sm font-bold px-6 py-2.5 rounded-full shadow-sm transition-all">
-              Mari Berdiskusi
-            </a>
-          </div>
-        </div>
-      </nav>
-
       {/* Header */}
-      <header className="max-w-6xl mx-auto px-6 pt-16 pb-12 md:pt-24 md:pb-16">
+      <header className="max-w-6xl mx-auto px-6 pt-8 pb-12 md:pt-12 md:pb-16">
         <div className="max-w-4xl">
           <span className="text-xs font-bold uppercase tracking-wider text-[#F5A623] mb-4 block">Studi Kasus SEO & Konten</span>
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-[#214634] leading-[1.2] tracking-tight mb-8">

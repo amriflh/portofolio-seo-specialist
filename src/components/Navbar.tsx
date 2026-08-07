@@ -234,9 +234,6 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
             {/* Modal Header */}
             <div className="p-5 sm:p-6 bg-[#2A4D3E] border-b border-white/10 flex items-center justify-between shadow-lg">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-2xl bg-[#FFB800] text-[#2A4D3E] font-black text-xl flex items-center justify-center shadow-md">
-                  AF
-                </div>
                 <div>
                   <h2 className="text-xl font-extrabold text-white tracking-tight">
                     Navigasi Portofolio

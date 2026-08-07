@@ -214,9 +214,6 @@ export const AlatanPage: React.FC<AlatanPageProps> = ({ onNavigate }) => {
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
               <div className="lg:w-1/3 flex-shrink-0">
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-[#214634] text-white flex items-center justify-center flex-shrink-0 shadow-md font-bold text-xl">
-                    A
-                  </div>
                   <div>
                     <h3 className="font-bold text-lg md:text-xl text-[#214634] leading-tight">Alatan Asasta Indonesia</h3>
                     <p className="text-[#F5A623] font-semibold text-xs md:text-sm mt-1">Content Strategist & Technical SEO</p>
